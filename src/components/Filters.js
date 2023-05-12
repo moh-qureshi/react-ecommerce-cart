@@ -6,7 +6,7 @@ import { CartState } from '../Context/Context'
 
 const Filters = () => {
 
-    const { productState: { byStock, byFastDelivery, byRating, searchQuery, sort }, productDispatch } = CartState();
+    const { productState: { byStock, byFastDelivery, byRating, sort }, productDispatch } = CartState();
     return (
     <FiltersStyled>
     <div className='filters'>
