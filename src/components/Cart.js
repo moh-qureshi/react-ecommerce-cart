@@ -29,7 +29,7 @@ export const Cart = () => {
             {cart.map((prod => (
                 <div className='cart-item' key={prod.id}>
                     <div className='cart-product'>
-                    <img src={prod.image} className='cart-page-img'></img>
+                    <img src={prod.image} className='cart-page-img' alt='cart-page-img'></img>
                     <span className='cart-page-title'>{prod.name}</span>
                     <span className='cart-page-price'>&pound;{prod.price}</span>
                     <AiFillDelete className='cart-page-delete-icon' onClick={() => dispatch({type: "REMOVE_FROM_CART", payload: prod,})}/>

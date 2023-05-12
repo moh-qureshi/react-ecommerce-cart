@@ -40,7 +40,7 @@ export const Header = () => {
                                 <div className='cart-dropdown'>
 
                                 <div className='cart-item' key={prod.id}>
-                                    <img src={prod.image} className='cart-item-img'></img>
+                                    <img src={prod.image} className='cart-item-img' alt='cart-item-img'></img>
                                     <span className='cart-item-title'>{prod.name}</span>
                                     <span className='cart-item-price'>&pound;{prod.price}</span>
                                     <AiFillDelete className='cart-delete-icon' onClick={() => dispatch({type: "REMOVE_FROM_CART", payload: prod,})}/>

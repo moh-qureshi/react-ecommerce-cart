@@ -11,7 +11,7 @@ const SingleProduct = ( {prod} ) => {
     <ProductsStyled>
     <div className='products'>
       <Card border='dark' class="shadow-lg p-3 mb-5 bg-white rounded" className={!prod.inStock ? "card-outOfStock" : "card-inStock"}>
-        <Card.Img variant='top' src={prod.image} className='card-img'/>
+        <Card.Img variant='top' src={prod.image} className='card-img' alt='card-img'/>
         <Card.Body>
           <Card.Title className='card-title'>{prod.name}</Card.Title>
           <Card.Subtitle className='card-subtitle'>
